@@ -22,13 +22,13 @@ You need to install the react-recaptcha-google.
 npm install react-recaptcha-google --save
 ```
 
-To use the Google ReCAPTCHA in your app, normally you would have to :
+To use the Google ReCAPTCHA in your app, normally you would have to:
 
 1. Call the loadReCaptcha() in the main component of your app
 2. Extend your schema to include a field who gets the token and whose input is the Google ReCAPTCH itself
 3. Add a callback in order to check with your secretkey
 
-With Vulcan Google ReCAPTCHA it is very easy :
+With Vulcan Google ReCAPTCHA it is very easy:
 
 1. Call in `client/main.js`
 
@@ -64,11 +64,11 @@ and include in `settings.json` the keys that you get from [Google](https://www.g
 }
 ```
 
-Remember not to put your secretKey in the public side !!
+Remember not to put your secretKey in the public side!!
 
 This package won't be published on Atmosphere or npm until it is a bit more mature.
 
-If you want to use the invisible reCaptcha change the onLoadRecaptcha method in captchaInput.js to :
+If you want to use the invisible reCaptcha change the onLoadRecaptcha method in captchaInput.js to:
 
 ```sh
   onLoadRecaptcha = () => {
