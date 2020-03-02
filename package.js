@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.onUse(api => {
-  api.use(["vulcan:core", "vulcan:users", "vulcan:lib"]);
+  api.use(["vulcan:core@1.12.3", "vulcan:users@1.12.3", "vulcan:lib@1.12.3"]);
 
   api.mainModule("lib/server/main.js", "server");
   api.mainModule("lib/client/main.js", "client");
